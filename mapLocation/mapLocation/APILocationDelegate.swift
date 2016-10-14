@@ -9,5 +9,5 @@
 import Foundation
 
 protocol APILocationDelegate {
-    func getLocationCity()
+    func reseachCity()
 }

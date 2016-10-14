@@ -14,7 +14,6 @@
 		8F8F9EF31DB02E170002A94D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F8F9EF21DB02E170002A94D /* Assets.xcassets */; };
 		8F8F9EF61DB02E170002A94D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F8F9EF41DB02E170002A94D /* LaunchScreen.storyboard */; };
 		8F8F9EFF1DB02FE60002A94D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F9EFE1DB02FE60002A94D /* City.swift */; };
-		8F8F9F011DB0443D0002A94D /* APIMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F9F001DB0443D0002A94D /* APIMap.swift */; };
 		8F8F9F031DB044E80002A94D /* APILocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8F9F021DB044E80002A94D /* APILocationDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +27,6 @@
 		8F8F9EF51DB02E170002A94D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F8F9EF71DB02E170002A94D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F8F9EFE1DB02FE60002A94D /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
-		8F8F9F001DB0443D0002A94D /* APIMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMap.swift; sourceTree = "<group>"; };
 		8F8F9F021DB044E80002A94D /* APILocationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILocationDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,7 +63,6 @@
 				8F8F9EFD1DB02E2D0002A94D /* Supporing Files */,
 				8F8F9EEB1DB02E170002A94D /* FirstViewController.swift */,
 				8F8F9EFE1DB02FE60002A94D /* City.swift */,
-				8F8F9F001DB0443D0002A94D /* APIMap.swift */,
 				8F8F9F021DB044E80002A94D /* APILocationDelegate.swift */,
 				8F8F9EED1DB02E170002A94D /* SecondViewController.swift */,
 				8F8F9EEF1DB02E170002A94D /* Main.storyboard */,
@@ -158,7 +155,6 @@
 				8F8F9EEE1DB02E170002A94D /* SecondViewController.swift in Sources */,
 				8F8F9EEA1DB02E170002A94D /* AppDelegate.swift in Sources */,
 				8F8F9EFF1DB02FE60002A94D /* City.swift in Sources */,
-				8F8F9F011DB0443D0002A94D /* APIMap.swift in Sources */,
 				8F8F9F031DB044E80002A94D /* APILocationDelegate.swift in Sources */,
 				8F8F9EEC1DB02E170002A94D /* FirstViewController.swift in Sources */,
 			);
@@ -312,6 +308,7 @@
 				8F8F9EFC1DB02E170002A94D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,10 +10,14 @@ import UIKit
 
 class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var searchCity: UITableView!
-    
+    @IBOutlet weak var tableView: UITableView!{
+        didSet{
+            tableView.reloadData()
+        }
+    }
+        
     var locationCity = City()
+    
     
     private struct Storyboard{
         static let cityCellIdentifier = "cityCell"
@@ -38,5 +42,13 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        for vcc in (tabBarController?.viewControllers)!{
+            if let controller = vcc as? SecondViewController{
+                controller.putPinOnTheMap(locationCity.cityHistory[indexPath.row])
+                tabBarController?.selectedIndex = 1
+            }
+        }
+    }
 }
 

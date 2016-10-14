@@ -7,27 +7,49 @@
 //
 
 import Foundation
+import MapKit
+import CoreLocation
 
 class City {
     
-    enum cityStatus {
-        case Default
-        case Recent
-    }
-    
-    var cityHistory: Array<(String,String,String, cityStatus)> = [
+    let cityHistory: Array<(String,String,String)> = [
         
-        ("42", "Ecole", "96 avenue boulevard bessiere, Paris", cityStatus.Default),
-        ("Tour Effeil", "Monument", "Champ de Mars, Paris", cityStatus.Default),
-        ("Les champs", "Avenue", "Avenue des Champs-Élysées, Paris", cityStatus.Default),
+        ("42", "Ecole Informatique", "96 avenue boulevard bessiere, Paris"),
+        ("Tour Effeil", "Monument Historique", "Champ de Mars, Paris"),
+        ("Les Champs Élysées", "Avenue de Paris", "Avenue des Champs-Élysées, Paris"),
     
     ]
     
-    func addCity(city: (String, String, String)) {
-        let data = (city.0, city.1, city.2, cityStatus.Recent)
-        cityHistory.append(data)
-    }
+    var currentCity: (String,String,String)?
     
-    
-    
+//    var cordinateCity = MKPointAnnotation()
+//    
+//    func getLocationCity(city : (String,String,String)) {
+//        
+//        let geoCoder = CLGeocoder()
+//        geoCoder.geocodeAddressString(city.2, completionHandler: { placemarks, error in
+//            if error != nil {
+//                print(error)
+//                return
+//            }
+//            
+//            if let placemarks = placemarks {
+//                // Get the first placemark
+//                let placemark = placemarks[0]
+//                
+//                // Add annotation
+//                self.cordinateCity.title = city.0
+//                self.cordinateCity.subtitle = city.1
+//                
+//                if let location = placemark.location {
+//                    self.cordinateCity.coordinate = location.coordinate
+//                }
+//                print("latitude \(self.cordinateCity.coordinate.latitude) et longitude \(self.cordinateCity.coordinate.longitude)")
+//               
+//
+//            }
+//            
+//        })
+//    }
+
 }
